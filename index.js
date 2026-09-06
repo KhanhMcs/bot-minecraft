@@ -12,8 +12,10 @@ const botArgs = {
     host: 'dongsec.joinmc.world', 
     port: 19601,              
     username: 'BotAFK247',    
-    version: false          // Thêm dòng này để bot tự nhận diện bản 26.2 mà không bị báo lỗi phiên bản
+    version: false,           // Đã sửa thành false để tự động bắt tay nhận bản 26.2
+    hideErrors: true          // Giữ lại dòng này để ẩn log rác màu đỏ tránh bị Render crash
 };
+
 let bot;
 
 function initBot() {
@@ -21,7 +23,7 @@ function initBot() {
     bot = mineflayer.createBot(botArgs);
 
     bot.on('spawn', () => {
-        console.log(`✅ Bot vào game thanh cong!`);
+        console.log(`✅ Bot vao game thanh cong!`);
         // Nhảy mỗi 30 giây chống AFK
         setInterval(() => {
             if (bot && bot.entity) {
