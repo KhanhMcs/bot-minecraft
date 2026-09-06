@@ -12,7 +12,7 @@ const botArgs = {
     host: 'dongsec.joinmc.world', 
     port: 19601,              
     username: 'BotAFK247',    
-    version: false,           // Đã sửa thành false để tự động bắt tay nhận bản 26.2
+    version: '1.20.4',           // Đã sửa thành false để tự động bắt tay nhận bản 26.2
     hideErrors: true          // Giữ lại dòng này để ẩn log rác màu đỏ tránh bị Render crash
 };
 
